@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-import openai  # OpenAI 모듈 수정
+import openai
 from PIL import Image
 
 # 페이지 설정
@@ -21,23 +21,25 @@ st.markdown(
     .user-message {
         background-color: #a1d9ce;  /* 연한 녹색 */
         border-radius: 10px;
-        padding: 10px;
-        margin: 5px 0;
+        padding: 15px;  /* 패딩 증가 */
+        margin: 10px 0;  /* 마진 증가 */
         text-align: right;
+        font-size: 18px;  /* 글씨 크기 증가 */
     }
     /* 어시스턴트 메시지 스타일 */
     .assistant-message {
         background-color: #ffffff;
         border-radius: 10px;
-        padding: 10px;
-        margin: 5px 0;
+        padding: 15px;  /* 패딩 증가 */
+        margin: 10px 0;  /* 마진 증가 */
         text-align: left;
+        font-size: 18px;  /* 글씨 크기 증가 */
     }
     /* 전체 채팅 영역 스타일 */
     .chat-container {
-        max-width: 600px;
+        max-width: 700px;  /* 너비 증가 */
         margin: auto;
-        padding: 10px;
+        padding: 15px;  /* 패딩 증가 */
         background-color: rgba(255, 255, 255, 0.9);
         border-radius: 10px;
     }
